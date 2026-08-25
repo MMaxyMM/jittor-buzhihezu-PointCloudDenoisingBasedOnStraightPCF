@@ -403,26 +403,6 @@ python scripts/precompute_clean_points.py \
 
 本地留出集只能比较候选的相对趋势，表格顶部成绩为官方 B 榜结果。
 
-## 代码检查压缩包
-
-比赛要求压缩包名称为：
-
-```text
-contest2_不知何组_023.zip
-```
-
-压缩包结构：
-
-```text
-contest2_不知何组_023.zip
-├── code/                  # 本仓库内容，包含 B 榜最优 ckpt
-├── requirements.txt
-└── 提交说明文档.pdf
-```
-
-公开仓库不包含联系人手机号和微信；这些信息应只写入提交给组委会的
-`提交说明文档.pdf`。
-
 ## 复现注意事项
 
 - 正式预测必须使用空的 `predict_transform.augments`，禁止二次加噪；
