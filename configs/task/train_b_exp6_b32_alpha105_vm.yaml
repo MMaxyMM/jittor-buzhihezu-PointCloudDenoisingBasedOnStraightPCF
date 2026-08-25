@@ -1,0 +1,17 @@
+mode: train
+
+components:
+  data: train_b_exp6_b32_alpha105_vm
+  transform: vm_b_exp6_b32_alpha105
+  system: vm_b_exp6_b32_alpha105
+  model: vm
+
+loss:
+  loss: 1.0
+
+optimizer:
+  __target__: adam
+  lr: 0.00025
+
+trainer:
+  epochs: 150

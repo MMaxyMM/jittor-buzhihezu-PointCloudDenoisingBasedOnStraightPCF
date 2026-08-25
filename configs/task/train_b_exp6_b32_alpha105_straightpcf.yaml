@@ -1,0 +1,18 @@
+mode: train
+
+components:
+  data: train_b_exp6_b32_alpha105_straightpcf
+  transform: straightpcf_b_exp6_b32_alpha105
+  system: straightpcf_b_exp6_b32_alpha105
+  model: straightpcf_b_exp6_b32_alpha105
+
+loss:
+  loss: 1.0
+
+optimizer:
+  __target__: adam
+  # 保持 A/B 共用训练循环不变，100 轮统一使用原 B 榜学习率。
+  lr: 0.00015
+
+trainer:
+  epochs: 100

@@ -1,0 +1,17 @@
+mode: train
+
+components:
+  data: train_b_exp6_b32_alpha105_cvm
+  transform: straightpcf_b_exp6_b32_alpha105
+  system: cvm_b_exp6_b32_alpha105
+  model: cvm_b_exp6_b32_alpha105
+
+loss:
+  loss: 1.0
+
+optimizer:
+  __target__: adam
+  lr: 0.00015
+
+trainer:
+  epochs: 100

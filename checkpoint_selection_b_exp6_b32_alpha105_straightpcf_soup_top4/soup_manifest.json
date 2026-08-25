@@ -1,0 +1,45 @@
+{
+  "ranked_ckpts": [
+    "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_93.pkl",
+    "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_90.pkl",
+    "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_88.pkl",
+    "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_94.pkl",
+    "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_85.pkl"
+  ],
+  "soups": [
+    {
+      "path": "checkpoint_selection_b_exp6_b32_alpha105_straightpcf/soup/soup_top2.pkl",
+      "members": [
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_93.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_90.pkl"
+      ]
+    },
+    {
+      "path": "checkpoint_selection_b_exp6_b32_alpha105_straightpcf/soup/soup_top3.pkl",
+      "members": [
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_93.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_90.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_88.pkl"
+      ]
+    },
+    {
+      "path": "checkpoint_selection_b_exp6_b32_alpha105_straightpcf/soup/soup_top4.pkl",
+      "members": [
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_93.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_90.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_88.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_94.pkl"
+      ]
+    },
+    {
+      "path": "checkpoint_selection_b_exp6_b32_alpha105_straightpcf/soup/soup_top5.pkl",
+      "members": [
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_93.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_90.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_88.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_94.pkl",
+        "experiments_b/exp6_b32_alpha105/straightpcf/checkpoint_85.pkl"
+      ]
+    }
+  ]
+}

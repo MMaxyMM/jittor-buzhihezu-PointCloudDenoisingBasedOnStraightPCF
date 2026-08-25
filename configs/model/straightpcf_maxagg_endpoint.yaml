@@ -1,0 +1,19 @@
+__target__: StraightPCFModule
+frame_knn: 16
+edge_aggregation: max
+num_train_points: 128
+dsm_sigma: 0.01
+velocity_embedding_dim: 256
+distance_embedding_dim: 128
+decoder_hidden_dim: 64
+num_modules: 4
+total_iterations: 2
+# DistanceModule 与 endpoint 使用 Charbonnier 损失联合微调。
+finetune_weight: 1.0
+init_cvm_ckpt: checkpoint_selection_cvm_maxagg_shared_patch_t/best_checkpoint.pkl
+patch_size: 1000
+seed_k: 6
+seed_k_alpha: 1
+fusion_mode: best
+# 在全部 patch 推理结束后统一缩放相对 noisy 的残差。
+residual_alpha: 1.10

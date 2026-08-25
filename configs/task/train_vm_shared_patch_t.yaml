@@ -1,0 +1,17 @@
+mode: train
+
+components:
+  data: train_cached
+  transform: vm
+  system: vm_shared_patch_t
+  model: vm
+
+loss:
+  loss: 1.0
+
+optimizer:
+  __target__: adam
+  lr: 0.0001
+
+trainer:
+  epochs: 100

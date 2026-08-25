@@ -1,0 +1,30 @@
+data_name: &data_name models/model_normalized.obj
+loader: &loader obj
+
+train_dataset:
+  shuffle: true
+  batch_size: 32
+  num_workers: 16
+  datapath:
+    input_dataset_dir: ./dataset_train
+    use_prob: false
+    loader: *loader
+    data_name: *data_name
+    ignore_check: true
+    data_path:
+      shapenet:
+        - [./datalist/train_b.txt, 1.0]
+
+validate_dataset:
+  shuffle: false
+  batch_size: 1
+  num_workers: 16
+  datapath:
+    input_dataset_dir: ./dataset_train
+    use_prob: false
+    loader: *loader
+    data_name: *data_name
+    ignore_check: true
+    data_path:
+      shapenet:
+        - [./datalist/validate_b.txt, 1.0]

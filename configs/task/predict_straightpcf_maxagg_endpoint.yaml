@@ -1,0 +1,13 @@
+mode: predict
+load_ckpt: checkpoint_selection_straightpcf_maxagg_endpoint/best_checkpoint.pkl
+
+components:
+  data: predict
+  transform: predict
+  system: straightpcf
+  model: straightpcf_maxagg_endpoint
+
+writer:
+  __target__: vm
+  save_dir: results
+  save_name: denoised

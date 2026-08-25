@@ -1,0 +1,18 @@
+mode: train
+
+components:
+  data: train_cached
+  transform: straightpcf
+  system: cvm_maxagg_shared_patch_t
+  model: cvm_maxagg_shared_patch_t
+
+loss:
+  loss: 1.0
+
+optimizer:
+  __target__: adam
+  lr: 0.0001
+
+trainer:
+  # 最终模型所用训练轮数。
+  epochs: 80

@@ -1,0 +1,55 @@
+# Python/Jittor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Local datasets and archives
+dataset_train/
+dataset_train_A/
+dataset_train_pcd/
+dataset_train_pcd_disk/
+dataset_test_noisy/
+dataset_local_test/
+*.tar
+*.tar.gz
+*.zip
+
+# Generated training/evaluation artifacts
+experiments/
+experiments_b/
+outputs/
+results/
+results_*/
+visualizations/
+diagnostics/
+tmp/
+*.log
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.pkl
+result*.txt
+prediction_manifest.json
+
+# Bash helpers are not part of the published code package
+*.sh
+
+# Keep only the two checkpoints required to reproduce the B-list best result
+!checkpoint_selection_b_exp6_b32_alpha105_cvm/
+!checkpoint_selection_b_exp6_b32_alpha105_cvm/best_checkpoint.pkl
+!checkpoint_selection_b_exp6_b32_alpha105_straightpcf_soup_top4/
+!checkpoint_selection_b_exp6_b32_alpha105_straightpcf_soup_top4/best_checkpoint.pkl
+
+# Local environments and editors
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+.cursor/
+.DS_Store

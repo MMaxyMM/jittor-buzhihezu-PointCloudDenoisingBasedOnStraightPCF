@@ -1,0 +1,26 @@
+Third-party notices
+===================
+
+StraightPCF
+-----------
+The VelocityModule, Coupled VelocityModule, DistanceModule and patch-based
+filtering design in this repository are adapted to Jittor from:
+
+Dasith de Silva Edirimuni, Xuequan Lu, Gang Li, Lei Wei,
+Antonio Robles-Kelly, and Hongdong Li.
+"StraightPCF: Straight Point Cloud Filtering", CVPR 2024,
+pages 20721-20730.
+
+Official implementation: https://github.com/ddsediri/StraightPCF
+The official StraightPCF repository is distributed under the MIT License.
+
+Jittor competition starter code
+-------------------------------
+This project also builds on the Jittor point-cloud denoising starter code
+provided to competition participants. The repository-level LICENSE applies to
+the modifications and integration contained here.
+
+Dependencies
+------------
+Jittor, NumPy, SciPy, trimesh, point-cloud-utils, OmegaConf, tqdm and Plotly
+remain subject to their respective upstream licenses.

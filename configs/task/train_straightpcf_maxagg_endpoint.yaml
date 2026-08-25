@@ -1,0 +1,18 @@
+mode: train
+
+components:
+  data: train_cached
+  transform: straightpcf
+  system: straightpcf_maxagg_endpoint
+  model: straightpcf_maxagg_endpoint
+
+loss:
+  loss: 1.0
+
+optimizer:
+  __target__: adam
+  lr: 0.0001
+
+trainer:
+  # 最终模型所用训练轮数；本次最佳 checkpoint 来自 epoch 38。
+  epochs: 50

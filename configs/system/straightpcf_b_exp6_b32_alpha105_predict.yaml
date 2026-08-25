@@ -1,0 +1,2 @@
+# 预测输出由 task 中 writer 控制，不保存训练 checkpoint。
+__target__: vm

@@ -1,0 +1,3 @@
+__target__: vm
+ckpt_save_dir: experiments/straightpcf_maxagg_endpoint
+ckpt_save_name: checkpoint

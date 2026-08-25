@@ -1,0 +1,14 @@
+mode: predict
+load_ckpt: checkpoint_selection_b_exp6_b32_alpha105_straightpcf/best_checkpoint.pkl
+
+components:
+  data: predict_b_exp6_b32_alpha100
+  transform: predict
+  system: straightpcf_b_exp6_b32_alpha100_predict
+  model: straightpcf_b_exp6_b32_alpha100
+
+writer:
+  __target__: vm
+  save_dir: results_b_exp6_b32_alpha100
+  save_name: denoised
+  output_format: npy

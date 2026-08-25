@@ -1,0 +1,3 @@
+__target__: vm
+ckpt_save_dir: experiments/cvm_maxagg_shared_patch_t
+ckpt_save_name: checkpoint
